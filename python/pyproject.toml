@@ -1,0 +1,22 @@
+[project]
+name = "flood-area-segmentation"
+version = "0.1.0"
+description = "Flood and water-covered region segmentation using the Kaggle Flood Area Segmentation dataset."
+requires-python = ">=3.10"
+dependencies = [
+  "torch",
+  "torchvision",
+  "numpy",
+  "pillow",
+  "tqdm",
+  "matplotlib",
+  "scikit-learn",
+  "kagglehub",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
